@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pembayaran</title>
+
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top bg-dua">
+    <div class="container">
+
+        <a class="navbar-brand text-white" href="#"><b>
+            KEDAI NYONYA RUMAH
+        </b></a>
+
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link text-white" href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a class="nav-link text-white" href="../login.html" onclick="logout()">
+                    Logout
+                </a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">
+        PAYMENT
+    </h2>
+
+    <div class="card shadow p-4">
+
+        <p id="infoUser" class="fs-5 fw-bold"></p>
+
+        <p id="infoMeja" class="fs-5"></p>
+
+        <div class="table-responsive mt-3">
+
+            <table class="table table-bordered table-striped text-center align-middle">
+
+                <thead class="table-success">
+                    <tr>
+                        <th>Order</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listPesanan"></tbody>
+
+            </table>
+
+        </div>
+
+        <h3 id="totalAkhir" class="text-end mt-3 text-success"></h3>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dua text-white py-4 mt-auto">
+    <div class="container text-center">
+        <p class="mb-1"><b>&copy; Kedai Nyonya Rumah</b></p>
+    </div>
+</footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/pembayaran.js"></script>
+
+</body>
+</html>

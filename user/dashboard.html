@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard user</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- NAVBAR -->
+ <nav class="navbar navbar-expand-lg sticky-top bg-dua">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#beranda"><b>
+            KEDAI NYONYA RUMAH
+        </b></a>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link text-white" href="../index.html">Beranda</a>
+                <a class="nav-link text-white" href="pesanan.html">Riwayat Pesanan</a>
+                <a class="nav-link text-white" href="../login.html" onclick="logout()">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- CONTENT -->
+
+
+<section class="d-flex align-items-center justify-content-center text-center bg-light text-success" style="min-height: 60vh;">
+
+    <div class="container">
+
+        <h1 id="welcome" class="display-4 fw-bold"></h1>
+
+        <h2 class="fw-light">
+            Silahkan pilih menu di bawah
+        </h2>
+
+    </div>
+
+</section>
+
+
+<!-- MENU -->
+<section class="py-5 bg-light flex-grow-1">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Menu 1 -->
+            <div class="col-md-3">
+
+                <div class="card h-100 shadow border-0">
+
+                    <img src="../assets/Nasi-Campur-Bali.jpg" class="card-img-top">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title fw-bold">
+                            Nasi Campur Bali
+                        </h5>
+
+                        <h4 class="text-success">
+                            Rp 65.000
+                        </h4>
+
+                        <button class="btn btn-success w-100"
+                        onclick="pesan('nasi campur bali',65000)">
+                            Pesan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Menu 2 -->
+            <div class="col-md-3">
+
+                <div class="card h-100 shadow border-0">
+
+                    <img src="../assets/Nasi-Goreng.jpg" class="card-img-top">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title fw-bold">
+                            Nasi Goreng
+                        </h5>
+
+                        <h4 class="text-success">
+                            Rp 40.000
+                        </h4>
+
+                        <button class="btn btn-success w-100"
+                        onclick="pesan('nasi goreng',40000)">
+                            Pesan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Menu 3 -->
+            <div class="col-md-3">
+
+                <div class="card h-100 shadow border-0">
+
+                    <img src="../assets/nasi-sei-sapi.png" class="card-img-top">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title fw-bold">
+                            Nasi Sei Sapi
+                        </h5>
+
+                        <h4 class="text-success">
+                            Rp 55.000
+                        </h4>
+
+                        <button class="btn btn-success w-100"
+                        onclick="pesan('nasi sei sapi',55000)">
+                            Pesan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Menu 4 -->
+            <div class="col-md-3">
+
+                <div class="card h-100 shadow border-0">
+
+                    <img src="../assets/Nasi-Tongseng-Kambing.jpg" class="card-img-top">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title fw-bold">
+                            Nasi Tongseng Kambing
+                        </h5>
+
+                        <h4 class="text-success">
+                            Rp 42.000
+                        </h4>
+
+                        <button class="btn btn-success w-100"
+                        onclick="pesan('Nasi Tongseng Kambing',42000)">
+                            Pesan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dua text-white py-4 mt-auto">
+
+    <div class="container text-center">
+
+        <p class="mb-1"><b>
+            &copy; Kedai Nyonya Rumah
+        </b><p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

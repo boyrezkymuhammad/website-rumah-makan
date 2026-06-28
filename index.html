@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Nyonya Rumah</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-dua">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html"><b>
+            KEDAI NYONYA RUMAH
+            </b></a>
+
+
+            <!-- Bagian Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-white" href="index.html">Beranda</a>
+                    <a class="nav-link text-white" href="#tentang">Tentang</a>
+                    <a class="nav-link text-white" href="#daftarmenu">Daftar Menu</a>
+                    <a class="nav-link text-white" href="#kontak">Kontak</a>
+                    <a class="nav-link text-white" href="login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-dua">
+            <img class="header-img" src="assets/header.png" alt="Header">
+    </section>
+
+    <section id="tentang" class="bg-satu">
+        <div class="container">
+            <h2 class="text-center mb-4 pt-5"><b>Tentang Kami</b></h2>
+
+            <div class="row align-item-center">
+                <!-- Untuk Logo -->
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <img src="assets/logo.png" class="rounded-circle logo-img">
+                </div>
+
+                <!-- Untuk Teksnya -->
+                <div class="col-md-8 mb-5">
+                    <p style="text-align:justify;">Nyonya Rumah merupakan representatif dari Ny. Julie Sutardjana sebagai pendiri dari usaha Kedai Nyonya Rumah yang telah mencintai dan menjadikan dunia kuliner sebagai hobi, sejak usia 10 tahun. Setelah melalui berbagai proses yang cukup panjang dengan usaha dan kegigihannya, Ny. Julie berhasil mendirikan bisnis kuliner Kedai Nyonya Rumah pada tahun 1999 dan terus berkembang serta berinovasi hingga sekarang.
+
+</p>
+                    <p style="text-align:justify;">Selain resto dan bar, Kedai Nyonya Rumah juga memiliki cake shop, dimana terdapat berbagai variant bakery yang lezat dan unik. Kedai Nyonya Rumah yang telah beroperasional selama lebih dari 20 tahun, dan menjadi salah satu destinasi kuliner favorite yang melegenda serta mempunyai banyak prestasi di Kota Bandung. Tidak hanya sukses di dunia kuliner, Ny. Julie juga membuat berbagai buku resep dan aktif menulis di berbagai media.
+
+</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="daftarmenu" class="bg-dua">
+        <div class="container">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-3 my-3">
+                    <div class="card">
+                        <img src="assets/Nasi-Campur-Bali.jpg" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Nasi Campur Bali</h5>
+                            <p class="card-text">Makanan khas Bali yang isinya nasi putih dengan berbagai lauk dalam saru piring</p>
+                            <button onclick="pesan('Nasi campur bali')" class="btn btn-success">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-3 my-3">
+                    <div class="card">
+                        <img src="assets/Nasi-Goreng.jpg" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Nasi Goreng</h5>
+                            <p class="card-text">Nasi Gorengt khas dengan kecap manis, telur, ayam suwir, dan kerupuk renyah</p>
+                            <button onclick="pesan('Nasi goreng')" class="btn btn-success">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-3 my-3">
+                    <div class="card">
+                        <img src="assets/nasi-sei-sapi.png" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Nasi Sei Sapi</h5>
+                            <p class="card-text">Hidangan khas NTT yang dagingnya diasapi sampai punya aroma smoky yang khas</p>
+                            <button onclick="pesan('Nasi sei sapi')" class="btn btn-success">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-3 my-3">
+                    <div class="card">
+                        <img src="assets/Nasi-Tongseng-Kambing.jpg" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Nasi Tongseng Kambing</h5>
+                            <p class="card-text">Hidangan nasi dengan potongan daging kambing empuk yang dimasak dalam kuah rempah gurih manis lengkap dengan kol dan tomat</p>
+                            <button onclick="pesan('Nasi tongseng kambing')" class="btn btn-success">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="bg-satu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 my-5">
+                    <div class="info-area">
+                        <h2><b>Kontak Kami</b></h2>
+                        <p><b>LOKASI: Jl. Naripan No.92c, Kb. Pisang, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40112</b></p>
+                        <p><b>Phone: +6285871826424</b></p>
+                        <p><b>Email: kedainyonyarumah.bdg@gmail.com</b></p>
+                        <p><b>Website: www.kedainyonyarumah.com</b></p>
+                    </div>
+                </div>
+                <div class="col-md-8 my-5">
+                    <div class="map-area">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.974285728236!2d107.59784338715819!3d-6.921227800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e62ef5db5453%3A0x51a7f1f4e3c24bdb!2sKedai%20Nyonya%20Rumah!5e0!3m2!1sen!2sid!4v1778481301415!5m2!1sen!2sid"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="bg-dua text-white py-4">
+    <div class="container text-center">
+        <p class="mb-1"><b>&copy; Kedai Nyonya Rumah</b></p>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

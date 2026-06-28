@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Pesanan</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+
+   
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top bg-dua">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#"><b>
+            KEDAI NYONYA RUMAH
+        </a></b>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link text-white" href="dashboard.html">Beranda</a>
+                <a class="nav-link text-white" href="pesanan.html">Riwayat Pesanan</a>
+                <a class="nav-link text-white" href="../login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Riwayat Pesanan
+    </h2>
+
+    <div class="table-responsive shadow rounded">
+        <table class="table table-bordered table-striped text-center align-middle mb-0">
+
+            <thead class="table-dua">
+                <tr>
+                    <th>No</th>
+                    <th>Menu</th>
+                    <th>Harga</th>
+                    <th>Qty</th>
+                    <th>No Meja</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <!-- nampilin data pesanan -->
+            <tbody id="tabelPesanan"></tbody>
+
+        </table>
+    </div>
+
+    <div class="text-center mt-4">
+        <button class="btn btn-success px-4 py-2" onclick="selesaikan()">
+            Check Out Pesanan
+        </button>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dua text-white mt-auto">
+    <div class="container text-center">
+        <p class="mb-1"><b>&copy; Kedai Nyonya Rumah</b></p>
+    </div>
+</footer>
+
+<script src="../js/pesanan.js"></script>
+
+</body>
+</html>
